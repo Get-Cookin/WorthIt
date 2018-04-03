@@ -1,0 +1,22 @@
+[package]
+name = "worthIt"
+version = "1.0.0"
+authors = ["Dan Eves <daneves85@googlemail.com>"]
+description = "Cost And Profitability Calculator For Devil's Pantry Events."
+homepage = ""
+repository = "https://github.com/Get-Cookin/WorthIt"
+readme = "README.md"
+keywords = ["finance", "calculator"]
+categories = ["web-programming::http-server"]
+license = "AGPL-3.0"
+
+[dependencies]
+rocket = "0.3.6"
+rocket_codegen = "0.3.6"
+
+[profile.dev]
+
+[profile.release]
+opt-level = 3
+codegen-units = 1
+lto = true
