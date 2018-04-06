@@ -4,16 +4,15 @@
 
 extern crate rocket;
 
-use rocket::response::Content;
-use rocket::http::ContentType;
+use std::io;
+use rocket::response::NamedFile;
 
 #[cfg(test)]
 mod tests;
 
-
 #[get("/")]
-pub fn index<'a>() -> rocket::response::Content<&'a str> {
-    Content(ContentType::HTML, include_str!("files/index.html"))
+pub fn index() -> io::Result<NamedFile> {
+    NamedFile::open("src/files/index.html")
 }
 
 fn main() {

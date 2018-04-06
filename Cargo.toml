@@ -1,6 +1,6 @@
 [package]
 name = "worthIt"
-version = "1.1.0"
+version = "1.2.0"
 authors = ["Dan Eves <daneves85@googlemail.com>"]
 description = "Cost And Profitability Calculator For Devil's Pantry Events."
 homepage = ""
