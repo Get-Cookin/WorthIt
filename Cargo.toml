@@ -1,6 +1,6 @@
 [package]
 name = "worthIt"
-version = "1.0.0"
+version = "1.1.0"
 authors = ["Dan Eves <daneves85@googlemail.com>"]
 description = "Cost And Profitability Calculator For Devil's Pantry Events."
 homepage = ""
@@ -11,8 +11,8 @@ categories = ["web-programming::http-server"]
 license = "AGPL-3.0"
 
 [dependencies]
-rocket = "0.3.6"
-rocket_codegen = "0.3.6"
+rocket = "0.3.7"
+rocket_codegen = "0.3.7"
 
 [profile.dev]
 

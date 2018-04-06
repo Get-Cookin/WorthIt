@@ -7,10 +7,13 @@ extern crate rocket;
 use rocket::response::Content;
 use rocket::http::ContentType;
 
+#[cfg(test)]
+mod tests;
+
 
 #[get("/")]
-fn index<'a>() -> rocket::response::Content<&'a str> {
-    Content(ContentType::HTML, include_str!("index.html"))
+pub fn index<'a>() -> rocket::response::Content<&'a str> {
+    Content(ContentType::HTML, include_str!("files/index.html"))
 }
 
 fn main() {
