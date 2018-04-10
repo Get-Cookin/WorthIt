@@ -1,3 +1,6 @@
+## New In 2.0.0
+  * Created HTML framework for web application.
+
 ## New In 1.2.0
   * Changed index() to load from the filesystem instead of inlining.
 
