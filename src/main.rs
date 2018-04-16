@@ -8,11 +8,11 @@ use std::io;
 use rocket::response::NamedFile;
 
 #[cfg(test)]
-mod tests;
+mod testsBin;
 
 #[get("/")]
 pub fn index() -> io::Result<NamedFile> {
-    NamedFile::open("src/files/index.html")
+    NamedFile::open("files/index.html")
 }
 
 fn main() {

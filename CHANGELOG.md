@@ -1,3 +1,6 @@
+## New In 3.0.0
+  * Created WASM library and build.sh.
+
 ## New In 2.0.0
   * Created HTML framework for web application.
 

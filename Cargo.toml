@@ -1,6 +1,6 @@
 [package]
 name = "worthIt"
-version = "2.0.0"
+version = "3.0.0"
 authors = ["Dan Eves <daneves85@googlemail.com>"]
 description = "Cost And Profitability Calculator For Devil's Pantry Events."
 homepage = ""
@@ -11,8 +11,21 @@ categories = ["web-programming::http-server"]
 license = "AGPL-3.0"
 
 [dependencies]
-rocket = "0.3.8"
-rocket_codegen = "0.3.8"
+rocket = { version = "0.3.8", optional = true }
+rocket_codegen = { version = "0.3.8", optional = true }
+
+[features]
+buildBin = ["rocket", "rocket_codegen"]
+
+[lib]
+name = "worthItFunctionsLarge"
+path = "src/lib.rs"
+crate-type = ["cdylib"]
+
+[[bin]]
+name = "worthItServer"
+path = "src/main.rs"
+required-features = ["buildBin"]
 
 [profile.dev]
 
