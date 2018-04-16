@@ -1,5 +1,5 @@
 ## New In 3.0.0
-  * Created WASM library and build.sh.
+  * Created WASM library, build.sh, tests.sh, worthItFunctionsTests.rs, .cargo/config
 
 ## New In 2.0.0
   * Created HTML framework for web application.
